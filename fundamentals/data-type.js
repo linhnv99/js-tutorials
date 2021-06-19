@@ -26,6 +26,7 @@ console.log("1 === 1n", 1 === 1n); // number !== bigint
 
 
 console.log("========================");
+
 // Function
 
 function myFuntion() {
@@ -70,4 +71,5 @@ console.log(myArray);
     Non-Primitive:(Complex Data)
         + Funtion
         + Object
+        + Regex
  */
