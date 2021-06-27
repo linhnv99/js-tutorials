@@ -76,3 +76,19 @@ for (let user of set) {
 // set.has(value) – returns true if the value exists in the set, otherwise false.
 // set.clear() – removes everything from the set.
 // set.size – is the elements count.
+
+
+
+
+// WeakMap and WeakSet
+//  key phải là object(not primitives)
+
+let weakMap = new WeakMap();
+let key = {};
+weakMap.set(key, "Hello WeakMap");
+
+console.log(weakMap.get(key));
+
+// err
+// weakMap.set(1, "Abc");
+
