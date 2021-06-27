@@ -1,3 +1,11 @@
+/**
+ * 
+ * Ngoại trừ các kiểu primitive thì tất cả đều là object
+ * 
+ * 
+ * 
+ * 
+ */
 
 // 2 cách để khởi tạo object
 
