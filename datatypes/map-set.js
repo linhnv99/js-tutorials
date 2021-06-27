@@ -51,6 +51,7 @@ mapLanguages.forEach((v, k) => {
 
 
 // SET 
+// not duplicate
 let set = new Set();
 
 let john = { name: "John" };
