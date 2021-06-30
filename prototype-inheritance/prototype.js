@@ -79,7 +79,7 @@ person2.getName();
 
 console.log(Person.prototype == person1.__proto__);
 
-person1.__proto__.test = 5;
+person1.__proto__.test = 5;// chọc đến prototype của thằng Person 
 
 console.log(Person.prototype.test)
 console.log(person2.test);
@@ -88,9 +88,9 @@ console.log(person2.test);
 // Sự khác nhau giữa __proto__ và prototype
 
 /*
-    .__proto__: là nội tại ẩn đi trong mỗi object
-    .prototype: là 1 object được tạo khi khởi tạo 1 function, default chỉ có 1 property duy nhất là constructor
+    .__proto__: là nội tại ẩn đi trong mỗi object đã đc tạo
+    .prototype: là 1 object được tạo khi khởi tạo 1 function constructor, default chỉ có 1 property duy nhất là constructor
 
-    => về bản chất thằng __proto__ vẫn trỏ đến thằng .prototype
+    => về bản chất thằng __proto__ là 1 cách để chọc đến thằng .prototype của Function Constructor
 
 */
