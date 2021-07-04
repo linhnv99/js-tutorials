@@ -28,7 +28,7 @@ myFunction2;
 console.log("================CALLBACK FUNTION================");
 
 function myCallBackFuntion(conditions, showOK, showNo) {
-    if(conditions) {
+    if (conditions) {
         showOK();
     } else {
         showNo();
@@ -51,3 +51,21 @@ console.log("===========ARROW FUNTION=============");
 
 let myArrowFunc = () => console.log("Arrow funtion");
 myArrowFunc();
+
+
+
+console.log("=============Function chaining===============");
+
+var calculator = {
+    result: 0,
+    plus: function (a, b) {
+        this.result = a + b;
+        return this;
+    },
+    substract: function (a) {
+        this.result -= a;
+        return this;
+    }
+}
+calculator.plus(5, 6).substract(1);
+console.log("function chaining: ", calculator.result);
